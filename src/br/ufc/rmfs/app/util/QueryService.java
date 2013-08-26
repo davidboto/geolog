@@ -71,7 +71,7 @@ public class QueryService extends IntentService {
 					JSONObject lat = place.getJSONObject("lat");
 					JSONObject lng = place.getJSONObject("long");
 					Point novaTag = new Point(label.getString("value"), "", "", "",
-							"", 0,  lng.getDouble("value"), lat.getDouble("value"));
+							 0,  lng.getDouble("value"), lat.getDouble("value"));
 					listaDePontos.add(novaTag);
 				}
 				data.putParcelableArrayList("results", listaDePontos);
