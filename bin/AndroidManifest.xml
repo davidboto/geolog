@@ -26,17 +26,15 @@
             android:name="br.ufc.rmfs.app.TextActivity"
             android:label="@string/title_activity_text" >
         </activity>
-        
-            <service 
-            android:name="br.ufc.rmfs.app.util.QueryService" 
-            android:enabled="true" />
-            
-                  <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="API_KEY" />
-            
-    </application>
 
+        <service
+            android:name="br.ufc.rmfs.app.util.QueryService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDCzOiOFdzhoyrckeM-IWJKPyg9LFBNfeU" />
+    </application>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
